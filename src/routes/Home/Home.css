@@ -1,0 +1,10 @@
+
+.Home {
+    padding: 16px;
+    grid-column: span 10;
+}
+
+.Home h1 {
+    margin: 0;
+    font-weight: 300;
+}

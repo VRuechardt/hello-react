@@ -1,0 +1,24 @@
+
+.RegisterForm {
+    margin-top: 32px;
+}
+
+.RegisterForm label {
+    display: block;
+    font-size: 10pt;
+    margin: 16px 0 0;
+    color: #aaa9b4;
+    max-width: 400px;
+}
+
+.RegisterForm label input {
+    display: block;
+    width: 100%;
+    background: none;
+    border: none;
+    border-bottom: 1px solid #78788F;
+    height: 32px;
+    margin: 0 0 8px;
+    outline: none;
+    color: #E3E1F0;
+}

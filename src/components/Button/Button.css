@@ -1,0 +1,18 @@
+
+.Button {
+    display: inline-block;
+    padding: 8px 16px;
+    text-transform: uppercase;
+    box-shadow: 2px 3px 6px rgba(0, 0, 0, 0.64);
+    margin: 8px 0;
+    background: #313191;
+    cursor: pointer;
+    user-select: none;
+    border-radius: 2px;
+    font-size: 11pt;
+}
+
+.Button[disabled] {
+    cursor: default;
+    background: #7F7F8F;
+}

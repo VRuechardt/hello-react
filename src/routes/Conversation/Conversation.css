@@ -1,0 +1,10 @@
+
+.Conversation {
+    padding: 16px;
+    grid-column: span 10;
+}
+
+.Conversation h1 {
+    margin: 0;
+    font-weight: 300;
+}
