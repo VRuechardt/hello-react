@@ -57,6 +57,7 @@ let send = (event, data, success, error) => {
 
             if(outstanding[data.rid]) {
                 error('request timeout')
+                delete outstanding[data.rid]
             }
 
         }, 10000)
