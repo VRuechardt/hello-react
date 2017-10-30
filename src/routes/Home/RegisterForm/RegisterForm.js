@@ -53,7 +53,7 @@ export default class RegisterForm extends React.Component {
     render() {
         return <form className="RegisterForm">
             <label>
-                Username
+                Your name
                 <input type="text" value={this.state.username} onChange={this.handleUsernameChange}/>
             </label>
             <label>

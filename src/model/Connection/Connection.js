@@ -34,10 +34,19 @@ socket.on('message', (msg, data) => {
 
     }
 
+    if(listeners[msg]) {
+
+        listeners[msg].forEach(callback => {
+            callback()
+        })
+
+    }
+
 })
 
 
 const outstanding = []
+const listeners = []
 let authID
 let send = (event, data, success, error) => {
 
@@ -96,6 +105,18 @@ class Connection {
 
     members(success, error) {
         send(Protocol.MEMBERS, {}, success, error)
+    }
+
+    listen(event, callback) {
+
+        assert(event && callback, 'Function listen requires two attributes')
+
+        if(listeners[event]) {
+            listeners[event].push(callback)
+        } else {
+            listeners[event] = [callback]
+        }
+
     }
 
 }

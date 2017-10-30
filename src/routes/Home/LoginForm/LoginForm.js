@@ -51,7 +51,7 @@ export default class LoginForm extends React.Component {
     render() {
         return <form className="LoginForm">
             <label>
-                Username
+                Your name
                 <input type="text" value={this.state.username} onChange={this.handleUsernameChange}/>
             </label>
             <label>
